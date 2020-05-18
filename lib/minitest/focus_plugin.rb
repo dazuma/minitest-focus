@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "minitest/focus"
+
 module Minitest
   def self.plugin_focus_options(_opts, options)
     return if Minitest::Test.filtered_names.empty?
